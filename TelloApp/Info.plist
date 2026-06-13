@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>BCI Drone</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>BCIDrone</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Bluetooth — required for NPG Lite BLE -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>BCI Drone uses Bluetooth to receive brain and EMG commands from the NPG Lite device.</string>
+
+    <!-- LOCAL NETWORK — required for iOS 14+ -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>BCI Drone needs local network access to connect to and control your Tello drone over WiFi.</string>
+
+    <!-- Bonjour services -->
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_tello._udp</string>
+        <string>_tello._tcp</string>
+    </array>
+
+    <!-- App Transport Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+    </dict>
+
+    <!-- Camera for live video -->
+    <key>NSCameraUsageDescription</key>
+    <string>Used to display live video from the Tello drone camera.</string>
+
+    <!-- Photo library -->
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>BCI Drone saves flight photos and videos to your library.</string>
+
+    <!-- Orientations -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</dict>
+</plist>

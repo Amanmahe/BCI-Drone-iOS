@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001000000000000AA01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA01 /* AppDelegate.swift */; };
+		AA000001000000000000AA02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA02 /* SceneDelegate.swift */; };
+		AA000001000000000000AA03 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA03 /* HomeViewController.swift */; };
+		AA000001000000000000AA04 /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA04 /* FlightViewController.swift */; };
+		AA000001000000000000AA05 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA05 /* SettingsViewController.swift */; };
+		AA000001000000000000AA06 /* JoystickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA06 /* JoystickView.swift */; };
+		AA000001000000000000AA07 /* TelloSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA07 /* TelloSDK.swift */; };
+		AA000001000000000000AA08 /* VideoStreamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA08 /* VideoStreamService.swift */; };
+		AA000001000000000000AA09 /* NPGBLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA09 /* NPGBLEManager.swift */; };
+		AA000001000000000000AA13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000AA13 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000002000000000000AA01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA03 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA04 /* FlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA05 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA06 /* JoystickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickView.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA07 /* TelloSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelloSDK.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA08 /* VideoStreamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamService.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA09 /* NPGBLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPGBLEManager.swift; sourceTree = "<group>"; };
+		AA000002000000000000AA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA000002000000000000AA11 /* TelloApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TelloApp.entitlements; sourceTree = "<group>"; };
+		AA000002000000000000AA12 /* TelloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000002000000000000AA13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000003000000000000AA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000004000000000000AA01 = {
+			isa = PBXGroup;
+			children = (
+				AA000004000000000000AA02 /* TelloApp */,
+				AA000002000000000000AA12 /* TelloApp.app */,
+			);
+			sourceTree = "<group>";
+		};
+		AA000004000000000000AA02 /* TelloApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA000002000000000000AA10 /* Info.plist */,
+				AA000002000000000000AA11 /* TelloApp.entitlements */,
+				AA000002000000000000AA13 /* Assets.xcassets */,
+				AA000004000000000000AA03 /* Controllers */,
+				AA000004000000000000AA04 /* Views */,
+				AA000004000000000000AA05 /* Services */,
+			);
+			path = TelloApp;
+			sourceTree = "<group>";
+		};
+		AA000004000000000000AA03 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA000002000000000000AA01 /* AppDelegate.swift */,
+				AA000002000000000000AA02 /* SceneDelegate.swift */,
+				AA000002000000000000AA03 /* HomeViewController.swift */,
+				AA000002000000000000AA04 /* FlightViewController.swift */,
+				AA000002000000000000AA05 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AA000004000000000000AA04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA000002000000000000AA06 /* JoystickView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA000004000000000000AA05 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA000002000000000000AA07 /* TelloSDK.swift */,
+				AA000002000000000000AA08 /* VideoStreamService.swift */,
+				AA000002000000000000AA09 /* NPGBLEManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000005000000000000AA01 /* TelloApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000007000000000000AA02 /* Build configuration list for PBXNativeTarget "TelloApp" */;
+			buildPhases = (
+				AA000006000000000000AA01 /* Sources */,
+				AA000003000000000000AA01 /* Frameworks */,
+				AA000006000000000000AA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelloApp;
+			productName = TelloApp;
+			productReference = AA000002000000000000AA12 /* TelloApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000000000000000000AA01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA000005000000000000AA01 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA000007000000000000AA01 /* Build configuration list for PBXProject "TelloApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000004000000000000AA01;
+			productRefGroup = AA000002000000000000AA12 /* TelloApp.app */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000005000000000000AA01 /* TelloApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000006000000000000AA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001000000000000AA13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000006000000000000AA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001000000000000AA01 /* AppDelegate.swift in Sources */,
+				AA000001000000000000AA02 /* SceneDelegate.swift in Sources */,
+				AA000001000000000000AA03 /* HomeViewController.swift in Sources */,
+				AA000001000000000000AA04 /* FlightViewController.swift in Sources */,
+				AA000001000000000000AA05 /* SettingsViewController.swift in Sources */,
+				AA000001000000000000AA06 /* JoystickView.swift in Sources */,
+				AA000001000000000000AA07 /* TelloSDK.swift in Sources */,
+				AA000001000000000000AA08 /* VideoStreamService.swift in Sources */,
+				AA000001000000000000AA09 /* NPGBLEManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA000008000000000000AA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA000008000000000000AA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA000008000000000000AA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TelloApp/TelloApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7S2TQX9MY2;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TelloApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.npglite.telloapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			};
+			name = Debug;
+		};
+		AA000008000000000000AA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TelloApp/TelloApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TelloApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.npglite.telloapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000007000000000000AA01 /* Build configuration list for PBXProject "TelloApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000008000000000000AA01 /* Debug */,
+				AA000008000000000000AA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000007000000000000AA02 /* Build configuration list for PBXNativeTarget "TelloApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000008000000000000AA03 /* Debug */,
+				AA000008000000000000AA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA000000000000000000AA01 /* Project object */;
+}
